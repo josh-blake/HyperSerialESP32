@@ -73,11 +73,11 @@
 	#endif
 #endif
 
-#if defined(ESP32C6)
+#if defined(ESP32S3)
 	#ifdef NEOPIXEL_RGBW
-		#define LED_DRIVER NeoPixelBus<NeoGrbwFeature, NeoEsp32BitBangSk6812Method>
+		#define LED_DRIVER NeoPixelBus<NeoGrbwFeature, NeoEsp32LcdX8Sk6812Method>
 	#elif NEOPIXEL_RGB
-		#define LED_DRIVER NeoPixelBus<NeoGrbFeature, NeoEsp32BitBangSk6812Method>
+		#define LED_DRIVER NeoPixelBus<NeoGrbFeature, NeoEsp32LcdX8Sk6812Method>
 	#endif
 #endif
 
