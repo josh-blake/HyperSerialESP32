@@ -1,7 +1,5 @@
 name: HyperSerialESP32 CI Build
 
-on: [push]
-
 jobs:
 
 ######################
