@@ -1,5 +1,7 @@
 name: HyperSerialESP32 CI Build
 
+on: [workflow_dispatch]
+
 jobs:
 
 ######################
