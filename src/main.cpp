@@ -73,6 +73,14 @@
 	#endif
 #endif
 
+#if defined(ESP32C6)
+	#ifdef NEOPIXEL_RGBW
+		#define LED_DRIVER NeoPixelBus<NeoGrbwFeature, NeoEsp32I2s1X8Sk6812Method>
+	#elif NEOPIXEL_RGB
+		#define LED_DRIVER NeoPixelBus<NeoGrbFeature, NeoEsp32I2s1X8Sk6812Method>
+	#endif
+#endif
+
 #ifdef SPILED_APA102
 	#define LED_DRIVER NeoPixelBus<DotStarBgrFeature, DotStarEsp32DmaHspiMethod>
 #elif SPILED_WS2801
